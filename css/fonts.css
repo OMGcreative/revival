@@ -1,0 +1,30 @@
+/* fonts */
+
+
+/* GOOGLE FONTS */
+/* Spectral */
+/* @import url("https://fonts.googleapis.com/css2?ffamily=Inter:wght@400;700&display=swap"); */
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* LOCAL FONTS */
+@font-face {
+    font-family: "LocalFont";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/localfonts/austin/LocalFont.woff") format("woff");
+    src: url("../assets/localfonts/LocalFont.woff2") format("woff2");
+    src: url("../assets/localfonts/LocalFont.otf") format("opentype");
+          
+  } 

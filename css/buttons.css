@@ -1,0 +1,123 @@
+/* buttons.css */
+
+/* style */
+
+button,
+.button,
+:not([class*="flickity"])[class*="button"],
+a[class*="button"],
+input[type=submit],
+.button-primary,
+.button-secondary,
+.nav-button,
+.button-outline,
+.button-rev-outline {
+    border-width: 1px;
+    font-size: 1rem;
+    font-weight: var(--med-font-weight);
+    line-height: 1;
+    padding: 0.75rem 2rem ;
+    border-radius: 0;
+    position: relative;
+    transition: var(--transition-button);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    word-break: keep-all;    
+    min-width: fit-content;
+    max-width: max-content;
+    text-transform: uppercase;
+    letter-spacing: var(--letterspacing-button);
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+
+@media screen and (max-width: 880px) {
+    button,
+    .button,
+    :not([class*="flickity"])[class*="button"],
+    a[class*="button"],
+    input[type=submit],
+    .button-primary,
+    .button-secondary,
+    .nav-button,
+    .button-outline,
+    .button-rev-outline {
+        width: 100%;
+        /* max-width: unset; */
+    }
+}
+
+/* ----------------------- */
+/* variation */
+
+.button-primary,
+.nav-button {
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    &:hover {
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        color: var(--white);
+    }
+}
+
+.button-solid {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    color: var(--primary);
+    &:hover {
+        background-color: var(--white);
+        border: 1px solid var(--secondary);
+        color: var(--primary);
+    }
+}
+
+.button-outline,
+.button-secondary {
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--secondary);
+    &:hover {
+        background-color: var(--primary);
+        border: 1px solid var(--primary);
+        color: var(--white);
+        cursor: pointer;
+    }
+}
+
+
+.button-rev-outline {
+    /* background-color: transparent; */
+    background-color: rgba(var(--primary-rgb),0.3);
+    border: 1px solid var(--white);
+    color: var(--white);
+    backdrop-filter: blur(5px);
+    &:hover {
+        background-color: var(--white);
+        border: 1px solid var(--white);
+        color: var(--primary);
+    }
+}
+
+.button,
+input[type=submit],
+.button-primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: var(--white);
+    &:hover {
+        background-color: var(--white);
+        border: 1px solid var(--primary);
+        color: var(--primary);
+    }
+}
