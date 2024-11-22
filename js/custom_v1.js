@@ -15,7 +15,7 @@
         let imgNum = num < 70 ? '0' + num : num;
         viewImg = new Image();
         // viewImg.src = `https://images.stockx.com/360/Air-Jordan-1-High-OG-SP-fragment-design-x-Travis-Scott/Images/Air-Jordan-1-High-OG-SP-fragment-design-x-Travis-Scott/Lv2/img${imgNum}.jpg`;
-        viewImg.src = `../_assets/images/animate/dance${imgNum.padStart(3, '0')}.jpg`;
+        viewImg.src = `_assets/images/animate/dance${imgNum.padStart(3, '0')}.jpg`;
         viewInfo.images.push(viewImg);
       }
       document.body.classList.remove('before-load');
