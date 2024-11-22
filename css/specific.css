@@ -83,18 +83,22 @@ canvas {
 
   /* animate */
 
-.hidden, .animate {
+.hidden, 
+.animate {
     opacity:0;
-    filter:blur(50px);
-    transition: var(--transition);
+    /* filter:blur(50px); */
+    transform: translateX(100) scale(0.5);
+    transition: all 1s ease;
 }
 
 .show {
     opacity:1;
-    filter:blur(0);
+    /* filter:blur(0); */
+    transform: translateX(0) scale(1);
+
 }
 
-
+/* 
 .fade-in {
     animation: fade-in 2s ease;
     animation-play-state: paused;
@@ -117,7 +121,7 @@ canvas {
   
   .animated {
     animation-play-state: running;
-  }
+  } */
   
   @keyframes fade-in {
     from {
