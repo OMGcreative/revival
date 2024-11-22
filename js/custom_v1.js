@@ -47,3 +47,29 @@
     window.addEventListener('resize', setView);
     window.addEventListener('load', setView);
   })();
+
+
+
+  const options = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1.0,
+  };
+  
+  const callback = (entries, observer) => {
+    entries.forEach(entry => {
+      // console.log(entry.isIntersecting && !entry.target.classList.contains("animated"));
+      // if (entry.isIntersecting && !entry.target.classList.contains("animate")) {
+      if (entry.isIntersecting ) {
+          entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    })
+  }
+  
+  const observer = new IntersectionObserver(callback, options);
+  
+  const animatedElements = document.querySelectorAll(".animate");
+  
+  animatedElements.forEach(element => observer.observe(element));
