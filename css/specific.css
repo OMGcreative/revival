@@ -11,7 +11,7 @@
 
 /* animate on scroll */
 body {
-    height: 400vh;
+    height: 300vh;
 }
 body.before-load {
     overflow-y: hidden;
@@ -87,14 +87,14 @@ canvas {
 .animate {
     opacity:0;
     /* filter:blur(50px); */
-    transform: translateX(100) scale(0.5);
-    transition: all 1s ease;
+    transform: translateY(20%) scale(0.8,0.8);
+    transition: all 250ms linear;
 }
 
 .show {
     opacity:1;
     /* filter:blur(0); */
-    transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1,1);
 
 }
 

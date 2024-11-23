@@ -56,7 +56,10 @@
     threshold: 1.0,
   };
   
-  const callback = (entries, observer) => {
+
+  const animatedElements = document.querySelectorAll(".animate");
+
+  const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       // console.log(entry.isIntersecting && !entry.target.classList.contains("animated"));
       // if (entry.isIntersecting && !entry.target.classList.contains("animate")) {
@@ -66,10 +69,15 @@
         entry.target.classList.remove("show");
       }
     })
-  }
+  })
   
-  const observer = new IntersectionObserver(callback, options);
   
-  const animatedElements = document.querySelectorAll(".animate");
   
   animatedElements.forEach(element => observer.observe(element));
+
+  
+  
+  // animatedElements.forEach(element => {
+  //   element.classList.add("hidden")
+  //   observer.observe(element)
+  // })
