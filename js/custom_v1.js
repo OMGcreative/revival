@@ -59,7 +59,7 @@
 
   const animatedElements = document.querySelectorAll(".animate");
 
-  const observer = new IntersectionObserver((entries) => {
+  const observer = new IntersectionObserver((entries, options) => {
     entries.forEach(entry => {
       // console.log(entry.isIntersecting && !entry.target.classList.contains("animated"));
       // if (entry.isIntersecting && !entry.target.classList.contains("animate")) {
@@ -81,3 +81,21 @@
   //   element.classList.add("hidden")
   //   observer.observe(element)
   // })
+
+
+//   let player = document.getElementById("bm");
+
+// player.addEventListener("ready", () => {
+//   LottieInteractivity.create({
+//         mode:"scroll",
+//         player: "#bm",
+//         actions: [
+//         {
+//             visibility:[0, 1.0],
+//             type: "seek",
+//             frames: [0, 300],
+//         },
+//         ]
+//       });
+// });
+
