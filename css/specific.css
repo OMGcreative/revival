@@ -11,7 +11,7 @@
 
 /* animate on scroll */
 body {
-    height: 300vh;
+    height: 350vh;
 }
 body.before-load {
     overflow-y: hidden;
@@ -143,3 +143,16 @@ canvas {
     }
   }
   
+
+
+#bm {
+    /* width: 100%;
+    height: 100%; */
+    width: 25vw;
+}
+
+@media screen and (max-width: 880px) {
+    #bm {
+        width: 75vw;
+    }
+}
