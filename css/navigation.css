@@ -130,6 +130,11 @@ nav .wrapper {
         width:120px;
     }
 }
+@media screen and (max-width: 880px) {
+    .logo svg {
+        width:80px;
+    }
+}
 
 .logo:hover svg {
     transform: scale(0.9) /*translate(-50%, -50%)*/;
