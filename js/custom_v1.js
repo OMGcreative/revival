@@ -3,7 +3,7 @@
       canvas: document.querySelector('.view-canvas'),
       context: document.querySelector('.view-canvas').getContext('2d'),
     //   pageYOffset: document.window.innerHeightheight,
-      imageCount: 69,
+      imageCount: 38,
       images: [],
       progress: 0,
       currentFrame: 0,
