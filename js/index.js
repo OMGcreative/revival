@@ -1,5 +1,5 @@
 var anim;
-var elem = document.getElementById('bm')
+var elem = document.getElementById('bm');
 var animation = bodymovin.loadAnimation({
     container: elem,
     renderer: 'svg',
@@ -51,4 +51,65 @@ var animation = bodymovin.loadAnimation({
 //     };
 // });
 
-document.getElementById('bm').addEventListener('mouseover', function(){ anim.play(); })
+//Play an animation back on second click
+
+let containerAnim = document.querySelector('.svg_wrap');
+
+let logoAnimate = document.getElementById('bm');
+
+    let animationLogo = bodymovin.loadAnimation({
+      container: logoAnimate,
+      renderer: 'svg',
+      loop: false,
+      autoplay: true,
+      path: 'data.json'
+    });
+
+    var directionAmin = 1;
+    logoAnimate.addEventListener('mouseenter', (e) => {
+      animationLogo.setDirection(-directionAmin);
+      animationLogo.play();
+    });
+
+    logoAnimate.addEventListener('mouseleave', (e) => {
+      animationLogo.setDirection(directionAmin);
+      animationLogo.play();
+    });
+
+
+// var t, hoverTime = 2000;
+
+// function start() {
+//   getInTime();
+//   t = setTimeout('pauseAnim()', hoverTime);
+//   anim.goToAndPlay(0);
+//   console.log("play");
+// }
+
+// function pauseAnim() {
+//   anim.pause();
+// }
+
+// function pauseToEnd() {
+//   anim.play();
+//   anim.addEventListener('loopComplete', function() {
+//     anim.stop();
+//   });
+//   clearTimeout(t);
+// }
+
+// function pauseToStart() {
+//   anim.goToAndStop(0);
+// }
+
+// containerAnim.addEventListener('mouseenter', function(){
+//   start();
+// });
+// containerAnim.addEventListener('mouseleave', function(){
+//   getOutTime();
+//   if (timeFull > hoverTime) {
+//     pauseToEnd();
+//   } else {
+//     pauseToStart();
+//   }
+// });
