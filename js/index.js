@@ -51,3 +51,4 @@ var animation = bodymovin.loadAnimation({
 //     };
 // });
 
+document.getElementById('bm').addEventListener('mouseover', function(){ anim.play(); })
