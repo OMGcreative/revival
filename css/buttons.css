@@ -52,6 +52,9 @@ input[type=submit],
     .button-outline,
     .button-rev-outline {
         width: 100%;
+        padding: 0.5rem 1.75rem ;
+        font-size: 0.8rem;
+        font-weight: var(--demi-font-weight);
         /* max-width: unset; */
     }
 }

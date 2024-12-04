@@ -13,6 +13,11 @@
 body {
     height: 350vh;
 }
+@media screen and (max-width: 880px) {
+    body {
+        height: 300vh;
+    }
+}
 body.before-load {
     overflow-y: hidden;
 }
@@ -70,6 +75,13 @@ canvas {
     align-items: center;
     gap: 25vh;
     margin-top: 35vh;
+  }
+
+  @media screen and (max-width: 880px) {
+    .content-wrap {
+        gap: 15vh;
+    }
+    
   }
 
   .svg_wrap {}
@@ -170,13 +182,17 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
+  /* transform: translate(-50%, 0); */
   z-index: 5555;
   padding: 0.5rem 1rem ;
+  display: flex;
+  justify-content: center;
 }
 
 
 footer p {
-  font-size: 12px;
+  font-size: 0.8rem;
   opacity: 0.5;
+  text-align: center;
 }

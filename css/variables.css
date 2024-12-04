@@ -28,7 +28,7 @@
 
 @media screen and (max-width: 1080px){
     :root {
-        --header-height: 32px;
+        --header-height: 52px;
         --logo-width: 132px;
         --logo-height: 36px;
         --nav-width: 100%;
