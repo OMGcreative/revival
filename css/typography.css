@@ -214,3 +214,17 @@ h3 {
     line-height: 1.1;
     margin: 0 0 1rem 0;
 }
+
+h4 {
+    font-size: var(--font-size-h4);
+    line-height: 1.1;
+    margin: 0 0 1rem 0;
+}
+
+h5 {
+    font-size: var(--font-size-h5);
+    line-height: 1.1;
+    margin: 0 0 1rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
